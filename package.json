@@ -1,0 +1,48 @@
+{
+  "name": "repro-tailwind-purge-bug",
+  "version": "0.0.0",
+  "scripts": {
+    "watch": "npm run build -- --watch",
+    "build": "postcss tailwind.css -o build.css",
+    "storybook": "start-storybook -p 6006"
+  },
+  "main": "./lib/index.js",
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "@semantic-release/git": "^9.0.0",
+    "@storybook/addon-essentials": "^6.4.0-alpha.24",
+    "@storybook/addon-links": "^6.4.0-alpha.24",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/addons": "^6.3.6",
+    "@storybook/builder-webpack5": "^6.4.0-alpha.24",
+    "@storybook/manager-webpack5": "^6.4.0-alpha.24",
+    "@storybook/react": "^6.4.0-alpha.24",
+    "@storybook/theming": "^6.4.0-alpha.24",
+    "@types/react": "^17.0.16",
+    "autoprefixer": "^10.3.1",
+    "clsx": "^1.1.1",
+    "css-loader": "^6.2.0",
+    "fork-ts-checker-webpack-plugin": "^6.3.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "process": "^0.11.10",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.56.0",
+    "rollup-plugin-exclude-dependencies-from-bundle": "^1.1.20",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-ts": "^1.4.0",
+    "semantic-release": "^17.4.4",
+    "string-replace-loader": "^3.0.3",
+    "style-loader": "^3.2.1",
+    "tailwindcss": "^2.2.7",
+    "typescript": "^4.3.5",
+    "webpack": "^5.49.0"
+  }
+}
